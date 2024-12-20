@@ -24,9 +24,8 @@ const RepositoriesSection = () =>{
                             Add Repository
                         </Button>
                     </div>
-                    
                 </div>
-                <div className="flex p-4 md:w-1/3">
+                <div className="flex px-4 pb-4 md:w-1/3">
                     <SearchBar/>
                 </div>
                 <div className="flex flex-col">

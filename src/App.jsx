@@ -1,4 +1,5 @@
 
+import { Route, Routes } from 'react-router'
 import './App.css'
 import HomePage from './pages/home/homePage.jsx'
 
@@ -10,7 +11,12 @@ function App() {
 
   return (
     <>
-      <HomePage/>
+      
+        <Routes>
+          <Route index element={<SignIn/>} />  
+          <Route path="dashboard" element={<HomePage/>} />  
+        </Routes>      
+      
     </>
   )
 }
