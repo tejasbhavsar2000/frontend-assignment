@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Logo from "../../assets/logo.svg";
-import { SAAS_SignInOptions, SelfHosted_SignInOptions } from "../../constants/SignInOptions";
-import SignInOptionCard from "../ui/signInOptionCard";
+import Logo from "../../../assets/logo.svg";
+import { SAAS_SignInOptions, SelfHosted_SignInOptions } from "../../../constants/SignInOptions";
+import SignInOptionCard from "../../ui/signInOptionCard";
 
 
 const LoginSection = () => {

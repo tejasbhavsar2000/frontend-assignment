@@ -1,6 +1,7 @@
 
 import './App.css'
-import RepositoryPage from './pages/repository/repositoryPage.jsx'
+import HomePage from './pages/home/homePage.jsx'
+
 import SignIn from './pages/signin/signInPage.jsx'
 
 
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <>
-      <RepositoryPage/>
+      <HomePage/>
     </>
   )
 }

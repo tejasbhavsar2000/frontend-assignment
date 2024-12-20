@@ -1,15 +1,12 @@
-import NavBar from "../../components/layout/navBar";
-import Button from "../../components/ui/button";
-import Refresh from '../../assets/refresh.svg'
-import Plus from '../../assets/plus.svg'
-import SearchBar from "../../components/ui/searchBar";
-import { RepositoriesData } from "../../constants/RepositoriesData";
-import RepositoryCard from "../../components/ui/repositoryCard";
-const RepositoryPage = () =>{
-    return(
-        <main className=" flex flex-col w-full md:relative md:flex-row min-h-screen md:bg-[#FAFAFA]">
-            <NavBar/>
-            <div className="md:flex-1 border-[#E9EAEB] border md:m-5 md:rounded-xl md:bg-white md:p-4">
+
+import Refresh from '../../../assets/refresh.svg'
+import Plus from '../../../assets/plus.svg'
+import SearchBar from "../../ui/searchBar";
+import { RepositoriesData } from "../../../constants/RepositoriesData";
+import RepositoryCard from "../../ui/repositoryCard";
+import Button from '../../ui/button';
+const RepositoriesSection = () =>{
+    return(<div className="md:flex-1 border-[#E9EAEB] border md:m-5 md:rounded-xl md:bg-white md:p-4">
                 <div className="flex p-4 flex-col md:flex-row gap-4 justify-between"> 
                     <div className="flex flex-col font-[Inter] text-[#181D27] gap-3">
                         <h2 className="flex flex-col text-[1.5rem] leading-6 font-semibold ">
@@ -41,9 +38,7 @@ const RepositoryPage = () =>{
                             })
                         }
                 </div>
-            </div>
-        </main>
-    )
+    </div>);
 }
 
-export default RepositoryPage;
+export default RepositoriesSection

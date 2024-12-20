@@ -1,7 +1,7 @@
-import Logo from '../../assets/logo.svg'
-import Pie from '../../assets/piechart.svg'
-import UpArrow from '../../assets/uparrow.svg'
-import BottomLogo from '../../assets/codeant.svg'
+import Logo from '../../../assets/logo.svg'
+import Pie from '../../../assets/piechart.svg'
+import UpArrow from '../../../assets/uparrow.svg'
+import BottomLogo from '../../../assets/codeant.svg'
 
 const ContentSection = () =>{
     return (

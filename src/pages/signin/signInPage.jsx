@@ -1,7 +1,7 @@
 
 
-import ContentSection from '../../components/layout/contentSection'
-import LoginSection from '../../components/layout/loginSection';
+import ContentSection from '../../components/layout/SignInPage/contentSection'
+import LoginSection from '../../components/layout/SignInPage/loginSection';
 const SignInPage = () =>{
 
     return (

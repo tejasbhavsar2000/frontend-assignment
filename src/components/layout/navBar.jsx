@@ -1,4 +1,5 @@
 import Logo from '../../assets/logo.svg'
+import Close from '../../assets/close.svg'
 import Hamburger from '../../assets/hamburger.svg'
 import ChevronDown from '../../assets/chevron-down.svg'
 import { NavItems } from '../../constants/NavItem'
@@ -16,7 +17,13 @@ const NavBar = () =>{
                         <img className='w-7' src={Logo}/>
                         <span>CodeAnt AI</span>
                     </div>
-                    <img className='md:hidden w-6' onClick={onClick} src={Hamburger}></img>
+                    {
+                        active ? 
+                        <img className='md:hidden w-4' onClick={onClick} src={Close}></img>:
+
+                        <img className='md:hidden w-6' onClick={onClick} src={Hamburger}></img>
+
+                    }
                     
             </div>
             <div className='flex-1  relative font-[Inter]'>
@@ -30,13 +37,13 @@ const NavBar = () =>{
                             {
                                 NavItems.map((item, id) =>{
                                     return (
-                                        <NavItem className={`md:${id == 5 || id == 6 ? 'hidden' : ''}`} aria-checked={id==0 ? true : false} name={item.name} logo={item.logo} key={item.name} ></NavItem>
+                                        <NavItem className={`md:${id == 5 || id == 6 ? 'hidden' : ''}`} aria-checked={id==0 ? true : false} name={item.name} logo={item.logo} key={item.name} id={id} ></NavItem>
                                     )
                                 })
                             }
                         </div>
                         <div>
-                            <NavItem   logo={NavItems[5].logo} name={NavItems[5].name}/>
+                            <NavItem logo={NavItems[5].logo} name={NavItems[5].name}/>
                             <NavItem logo={NavItems[6].logo} name={NavItems[6].name}/>
                         </div>
                     </nav>
