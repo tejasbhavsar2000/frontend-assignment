@@ -14,7 +14,7 @@ Steps to run project locally:
 1. **Clone repository**:  
    ```bash  
    git clone https://github.com/tejasbhavsar2000/frontend-assignment.git
-   cd frontend-assignemnt
+   cd frontend-assignment
    ```  
 
 2. **Install dependencies**:  
