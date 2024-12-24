@@ -1,6 +1,8 @@
 
 # CodeAnt AI Assignment
-Assignment for Frontend Developer Intern.
+Assignment for Frontend Developer Intern. 
+
+### Live Preview : https://codeant-ai-sage.vercel.app/
 
 ## Technologies Used  
 - **React**: for building user interface.  
